@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        alert("Hello Harshhh");
+
+        let myClass = prompt("Enter the class you are studying");
+        alert("I am studying in " + myClass);
+
+        let like = confirm("Do you like Aisha mam?");
+        alert("I like her: " + like);
+    </script>
+
+    <div class="form">
+        <h3>PLEASE SUBMIT YOUR FEEDBACK</h3>
+
+        <form onsubmit="submitFeedback(); return false;">
+            <textarea placeholder="Write your feedback" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function submitFeedback() {
+            alert("Feedback submitted successfully!");
+        }
+    </script>
+
+</body>
+</html>
